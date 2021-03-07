@@ -18,6 +18,9 @@ public class DepartmentRepositories implements IDepartmentRepositories {
 
     //Logic of all methods with using postgresql query
     @Override
+
+    //to show all table We take it from from DB, create arraylist to save the departments and return this arraylist
+
     public ArrayList<Department> showAllDepartment() {
         Connection connection = null;
         try {
@@ -45,6 +48,9 @@ public class DepartmentRepositories implements IDepartmentRepositories {
     }
 
     @Override
+
+    //Department name is PRIMARY KEY, sooo there was used just Department without ArrayList
+
     public Department getDepartmentByName(String department) {
         Connection connection = null;
         try {
@@ -66,6 +72,9 @@ public class DepartmentRepositories implements IDepartmentRepositories {
     }
 
     @Override
+
+    //boolean function with add department to DB, which return true if it was added, if not return false
+
     public boolean addNewDepartment(Department department) {
         Connection connection = null;
         try {
@@ -86,6 +95,9 @@ public class DepartmentRepositories implements IDepartmentRepositories {
     }
 
     @Override
+
+    //Delete department with using name
+
     public boolean removeDepartment(String department) {
         Connection connection = null;
         try {
@@ -101,6 +113,9 @@ public class DepartmentRepositories implements IDepartmentRepositories {
         }
         return false;
     }
+
+    //Department table has "employee quantity" column, and it will automatically updated with help of this function.
+    //This method wouldn't be in controller
 
     @Override
     public void updateEmployeeQuantity(int quantity, String department) {

@@ -20,6 +20,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
 
     //Logic of all methods with using postgresql query
     @Override
+
+    //to show all table We take it from from DB, create arraylist to save the employees and return this arraylist
+
     public ArrayList<Employee> showAllEmployee() {
         Connection connection = null;
         try {
@@ -49,6 +52,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
+
+    //Employee can have same name, because of this ArrayList was used to return list of all Employee with given name
+
     public ArrayList<Employee> searchEmployeeByName(String name) {
         Connection connection = null;
         try {

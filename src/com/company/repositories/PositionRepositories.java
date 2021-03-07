@@ -18,6 +18,9 @@ public class PositionRepositories implements IPositionRepositories {
 
     //Logic of all methods with using postgresql query
     @Override
+
+    //to show all table We take it from from DB, create arraylist to save the positions and return this arraylist
+
     public ArrayList<Position> showAllPosition() {
         Connection connection = null;
         try {

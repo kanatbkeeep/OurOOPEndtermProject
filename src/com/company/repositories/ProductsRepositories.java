@@ -20,6 +20,9 @@ public class ProductsRepositories implements IProductsRepositories {
 
     //Logic of all methods with using postgresql query
     @Override
+
+    //to show all table We take it from from DB, create arraylist to save the products and return this arraylist
+
     public ArrayList<Products> showAllProducts() {
         Connection connection = null;
         try {
