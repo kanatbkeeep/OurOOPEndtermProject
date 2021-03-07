@@ -3,6 +3,8 @@ package com.company.controllers;
 import com.company.entities.Employee;
 import com.company.repositories.interfaces.IEmployeeRepositories;
 
+//Class which is connect to repository and myApplication, and return query result
+
 public class EmployeeController {
     private final IEmployeeRepositories employeeRepositories;
 

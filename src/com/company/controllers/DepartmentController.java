@@ -3,6 +3,8 @@ package com.company.controllers;
 import com.company.entities.Department;
 import com.company.repositories.interfaces.IDepartmentRepositories;
 
+//Class which is connect to repository and myApplication, and return query result
+
 public class DepartmentController {
     private final IDepartmentRepositories departmentRepositories;
 

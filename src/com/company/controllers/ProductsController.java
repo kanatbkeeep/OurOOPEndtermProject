@@ -3,6 +3,8 @@ package com.company.controllers;
 import com.company.entities.Products;
 import com.company.repositories.interfaces.IProductsRepositories;
 
+//Class which is connect to repository and myApplication, and return query result
+
 public class ProductsController {
     private final IProductsRepositories productsRepositories;
 
