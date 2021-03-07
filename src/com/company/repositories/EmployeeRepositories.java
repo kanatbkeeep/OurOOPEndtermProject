@@ -86,6 +86,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
+
+    //Employee can have same department, because of this ArrayList was used to return list of all Employee with given department
+
     public ArrayList<Employee> searchEmployeeByDepartment(String department) {
         Connection connection = null;
         try {
@@ -117,6 +120,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
+
+    //Employee can have same position, because of this ArrayList was used to return list of all Employee with given position
+
     public ArrayList<Employee> searchEmployeeByPosition(String position) {
         Connection connection = null;
         try {
@@ -148,6 +154,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
+
+    //Employee have individual id, so Employee class was used to get only 1 result
+
     public Employee getEmployeeById(int id) {
         Connection connection = null;
         try {
@@ -177,6 +186,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
+
+    //method which connect employee and position table from DB to sum salary of all employees
+
     public int getSumOfSalaryOfAllEmployee() {
         Connection connection = null;
         try {
@@ -196,6 +208,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
+
+    //boolean function with add department to DB, which return true if it was added, if not return false
+
     public boolean addNewEmployee(Employee employee) {
         Connection connection = null;
         try {
@@ -218,6 +233,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
+
+    //deleting employee from DB with using id
+
     public boolean removeEmployee(int id) {
         Connection connection = null;
         try {
@@ -235,6 +253,9 @@ public class EmployeeRepositories implements IEmployeeRepositories {
     }
 
     @Override
+
+    //method which count amount(and return it) of employee in department which would be used for updating "employee quantity" in department table
+
     public int getEmployeeQuantity(String department) {
         Connection connection = null;
         try {

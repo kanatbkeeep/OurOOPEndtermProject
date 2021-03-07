@@ -108,6 +108,9 @@ public class ProductsRepositories implements IProductsRepositories {
     }
 
     @Override
+
+    //boolean function with add department to DB, which return true if it was added, if not return false
+
     public boolean addNewProduct(Products products) {
         Connection connection = null;
         try {

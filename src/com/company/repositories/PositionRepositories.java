@@ -46,6 +46,9 @@ public class PositionRepositories implements IPositionRepositories {
     }
 
     @Override
+
+    //boolean function with add department to DB, which return true if it was added, if not return false
+
     public boolean addNewPosition(Position position) {
         Connection connection = null;
         try {
@@ -65,6 +68,9 @@ public class PositionRepositories implements IPositionRepositories {
     }
 
     @Override
+
+    //deleting position
+
     public boolean removePosition(String position) {
         Connection connection = null;
         try {
