@@ -3,6 +3,7 @@ package com.company.entities;
 import java.time.LocalDate;
 
 public class Employee {
+    //creating var to employee
     private int id;
     private String name;
     private String surname;
@@ -10,6 +11,7 @@ public class Employee {
     private String position;
     private String department;
 
+    //creating constructor, also one should be without id, because it automatically generate in DB
     public Employee() {
     }
 
@@ -30,6 +32,7 @@ public class Employee {
         setDepartment(department);
     }
 
+    //getter setter
     public int getId() {
         return id;
     }
@@ -78,6 +81,7 @@ public class Employee {
         this.department = department;
     }
 
+    //toString
     @Override
     public String toString() {
         return  "id = " + id + " | " +

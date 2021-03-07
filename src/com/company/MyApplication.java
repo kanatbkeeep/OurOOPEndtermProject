@@ -15,12 +15,14 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class MyApplication {
+    //create new var to connect it to controllers class
     private Scanner scanner;
     private DepartmentController departmentController;
     private EmployeeController employeeController;
     private PositionController positionController;
     private ProductsController productsController;
 
+    //creating constructor
     public MyApplication(DepartmentController departmentController, EmployeeController employeeController, PositionController positionController, ProductsController productsController) {
         scanner = new Scanner(System.in);
         this.departmentController = departmentController;
@@ -29,8 +31,9 @@ public class MyApplication {
         this.productsController = productsController;
     }
 
-
+    //function start
     public void start() {
+        //options list
         while (true) {
             System.out.println("""
                             Choose one option:
@@ -185,6 +188,8 @@ public class MyApplication {
         String department = scanner.next();
         Employee employee = new Employee(name, surname, LocalDate.parse(date_of_hiring), position, department);
         System.out.println(employeeController.addNewEmployee(employee));
+
+        //updating employee quantity in department everytime when new employee is added
         departmentController.updateEmployeeQuantity(employeeController.getEmployeeQuantity(department), department);
     }
 

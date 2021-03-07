@@ -18,6 +18,7 @@ import com.company.repositories.interfaces.IProductsRepositories;
 public class Main {
 
     public static void main(String[] args) {
+        //creating object and start start function from MyApplication class
         IDBManager dbManager = new DBManager();
         IDepartmentRepositories departmentRepositories = new DepartmentRepositories(dbManager);
         DepartmentController departmentController = new DepartmentController(departmentRepositories);

@@ -1,9 +1,11 @@
 package com.company.entities;
 
 public class Position {
+    //creating var to position
     private String position;
     private int salary;
 
+    //creating constructor
     public Position() {
     }
 
@@ -28,6 +30,7 @@ public class Position {
         this.salary = salary;
     }
 
+    //toString
     @Override
     public String toString() {
         return  "position = " + position + " | " +
