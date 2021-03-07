@@ -18,6 +18,7 @@ public class ProductsRepositories implements IProductsRepositories {
         this.dbManager = dbManager;
     }
 
+    //Logic of all methods with using postgresql query
     @Override
     public ArrayList<Products> showAllProducts() {
         Connection connection = null;

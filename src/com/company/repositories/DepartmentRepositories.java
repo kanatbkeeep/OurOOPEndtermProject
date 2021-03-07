@@ -16,6 +16,7 @@ public class DepartmentRepositories implements IDepartmentRepositories {
         this.dbManager = dbManager;
     }
 
+    //Logic of all methods with using postgresql query
     @Override
     public ArrayList<Department> showAllDepartment() {
         Connection connection = null;

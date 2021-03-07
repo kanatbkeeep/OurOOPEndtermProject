@@ -16,6 +16,7 @@ public class PositionRepositories implements IPositionRepositories {
         this.dbManager = dbManager;
     }
 
+    //Logic of all methods with using postgresql query
     @Override
     public ArrayList<Position> showAllPosition() {
         Connection connection = null;

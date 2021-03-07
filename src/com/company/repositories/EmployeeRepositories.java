@@ -18,6 +18,7 @@ public class EmployeeRepositories implements IEmployeeRepositories {
         this.dbManager = dbManager;
     }
 
+    //Logic of all methods with using postgresql query
     @Override
     public ArrayList<Employee> showAllEmployee() {
         Connection connection = null;
