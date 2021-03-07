@@ -3,12 +3,14 @@ package com.company.entities;
 import java.time.LocalDate;
 
 public class Products {
+    //creating var to products
     private int id;
     private String product;
     private int price;
     private LocalDate delivery_date;
     private LocalDate expiration_date;
 
+    //creating constructor, also one should be without id, because it automatically generate in DB
     public Products() {
     }
 

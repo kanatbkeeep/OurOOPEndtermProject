@@ -1,6 +1,7 @@
 package com.company.entities;
 
 public class Department {
+    //creating var to department
     private String department;
     private String address;
     private String city;
