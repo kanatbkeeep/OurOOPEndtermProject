@@ -51,6 +51,9 @@ public class ProductsRepositories implements IProductsRepositories {
     }
 
     @Override
+
+    //Save products with same name to ArrayList and return it
+
     public ArrayList<Products> searchProductByName(String product) {
         Connection connection = null;
         try {
@@ -80,6 +83,9 @@ public class ProductsRepositories implements IProductsRepositories {
     }
 
     @Override
+
+    //return product with given id from DB
+
     public Products getProductById(int id) {
         Connection connection = null;
         try {
@@ -132,6 +138,9 @@ public class ProductsRepositories implements IProductsRepositories {
     }
 
     @Override
+
+    //deleting product with given id
+
     public boolean removeProduct(int id) {
         Connection connection = null;
         try {
@@ -149,6 +158,9 @@ public class ProductsRepositories implements IProductsRepositories {
     }
 
     @Override
+
+    //delete products with expired expiration date
+
     public boolean deleteProductWithExpiredExpirationDate() {
         Connection connection = null;
         try {
