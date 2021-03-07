@@ -60,7 +60,7 @@ public class MyApplication {
                 int choice1 = scanner.nextInt();
 
                 if (choice1 == 1) showAllProductsMenu();
-                else if (choice1 == 2) searchEmployeeByNameMenu();
+                else if (choice1 == 2) searchProductByNameMenu();
                 else if (choice1 == 3) getProductByIdMenu();
                 else if (choice1 == 4) addNewProductMenu();
                 else if (choice1 == 5) removeProductMenu();
