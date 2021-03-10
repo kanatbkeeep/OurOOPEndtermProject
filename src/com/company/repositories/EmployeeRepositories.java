@@ -260,7 +260,7 @@ public class EmployeeRepositories implements IEmployeeRepositories {
         Connection connection = null;
         try {
             connection = dbManager.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT COUNT(id) FROM employee;");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT COUNT(id) FROM employee WHERE department = '" + department +"'");
             preparedStatement.executeQuery();
             ResultSet resultSet = preparedStatement.executeQuery();
             resultSet.next();
