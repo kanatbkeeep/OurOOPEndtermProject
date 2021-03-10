@@ -196,7 +196,10 @@ public class MyApplication {
     public void removeEmployeeMenu() {
         System.out.println("White employee's id to remove employee from DB:");
         int id = scanner.nextInt();
+        System.out.println("White employee's department to remove employee from DB:");
+        String department = scanner.next();
         System.out.println(employeeController.removeEmployee(id));
+        departmentController.updateEmployeeQuantity(employeeController.getEmployeeQuantity(department), department);
     }
 
     //-------------------------------------------PRODUCTS-MENU-----------------------------------------------
