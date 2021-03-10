@@ -3,7 +3,7 @@ package com.company.controllers;
 import com.company.entities.Position;
 import com.company.repositories.interfaces.IPositionRepositories;
 
-//Class which is connect to repository and myApplication, and return query result
+//Class which is connect to repository and myApplication, and return query result.
 
 public class PositionController {
     private  final IPositionRepositories positionRepositories;
